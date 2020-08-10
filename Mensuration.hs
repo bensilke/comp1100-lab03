@@ -14,3 +14,4 @@ area shape = case shape of
     Square x -> x * x
     Rectangle l w -> l * w
 
+doctest

@@ -29,8 +29,10 @@ markToGrade mark
 
 -- | Exercise 4
 -- Your comment here
-markToGrade' :: (Course, Mark) -> Grade
-markToGrade' = undefined
+markToGradeCourse :: (Course, Mark) -> Grade
+markToGradeCourse (_,mark) = markToGrade mark
+
+  
 
 -- | Exercise 5
 -- Your comment here

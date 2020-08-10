@@ -15,5 +15,10 @@ isCold season = case season of
     Spring -> False
     Summer -> False
     Autumn -> False
-    Winter -> False
     Winter -> True
+
+isColdTwo :: Season -> Bool
+isColdTwo season 
+    | season == Winter = True
+    | otherwise        = False
+

@@ -37,7 +37,15 @@ markToGradeCourse (_,mark) = markToGrade mark
 -- | Exercise 5
 -- Your comment here
 markToGradeSafe ::  Mark -> Maybe Grade
-markToGradeSafe = undefined
+markToGradeSafe mark
+  | mark >= 80 && mark <= 100 = Just HighDistinction
+  | mark >= 70 && mark <   80 = Just Distinction
+  | mark >= 60 && mark <   70 = Just Credit
+  | mark >= 50 && mark <   60 = Just Pass
+  | mark >=  0 && mark <   50 = Just Fail
+  | mark > 100 || mark < 0    = Nothing
+  | otherwise                 = Nothing
+
 
 -- | Exercise 6
 -- Your comment here

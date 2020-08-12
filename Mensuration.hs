@@ -1,6 +1,16 @@
 
 module Mensuration where
 
+-- | GPA Calculator
+--
+-- >>> area(Circle 2)
+-- 12.566370614359172
+--
+-- >>> area(Rectangle(2,4))
+-- 8
+
+
+
 
 data Shape
   = Circle Double -- ^ Radius
@@ -14,4 +24,3 @@ area shape = case shape of
     Square x -> x * x
     Rectangle l w -> l * w
 
-doctest

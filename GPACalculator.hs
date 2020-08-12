@@ -5,6 +5,14 @@ Date        : 04/02/2019
 Description : This module contains functions to calculate GPA from grades and marks.
 -}
 
+-- | GPA Calculator
+--
+-- >>> markToGPA 75
+-- 6
+--
+-- >>> markToGradeSafe 81
+-- High Distinction
+
 module GPACalculator where
 
 data Grade = Fail | Pass | Credit | Distinction | HighDistinction
